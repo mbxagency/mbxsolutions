@@ -375,6 +375,66 @@ body {
     color: #222;
 }
 
+/* Clients Section */
+.clients {
+    padding: 80px 0;
+    background: white;
+}
+
+.clients-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 3rem;
+    align-items: center;
+    justify-items: center;
+    margin-top: 3rem;
+}
+
+.client-logo {
+    width: 150px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: #f8fafc;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    border: 1px solid #e2e8f0;
+}
+
+.client-logo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    background: white;
+}
+
+.client-text {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1e293b;
+    text-align: center;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.client-logo:hover .client-text {
+    color: #2563eb;
+    transform: scale(1.05);
+}
+
+.client-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.client-logo:hover img {
+    filter: grayscale(0%);
+}
+
 /* Contact Section */
 .contact {
     padding: 80px 0;
@@ -563,6 +623,16 @@ body {
 
     .tech-stack {
         grid-template-columns: 1fr;
+    }
+    
+    .clients-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+    .client-logo {
+        width: 120px;
+        height: 60px;
     }
 }
 
