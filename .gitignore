@@ -28,3 +28,7 @@ Thumbs.db
 # Arquivos de backup
 *.bak
 *.backup 
+# Currículo ATS
+resume.html 
+# Currículo
+CV_Murilo_Biss.pdf 
